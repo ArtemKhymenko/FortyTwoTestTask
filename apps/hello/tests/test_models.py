@@ -18,5 +18,8 @@ class HelloModelsTest(TestCase):
         )
 
     def test_model(self):
+        """
+        Check if data in model's fields are equals to intial data
+        """
         self.assertEqual(self.person.name, 'Artem')
         self.assertEqual(self.person.bio, 'Long way')
