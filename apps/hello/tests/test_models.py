@@ -1,7 +1,7 @@
 from django.test import TestCase
 
-
 from hello.models import Person
+
 
 class HelloModelsTest(TestCase):
 

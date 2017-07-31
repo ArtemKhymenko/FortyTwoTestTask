@@ -2,6 +2,7 @@ from django.views.generic.base import TemplateView
 
 from hello.models import Person
 
+
 class HomePageView(TemplateView):
 
     template_name = 'index.html'
