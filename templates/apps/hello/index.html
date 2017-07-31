@@ -3,18 +3,20 @@
 {% block title %}42 Coffee Cups Test Assignment{% endblock %}
 
 {% block content %}
-  <h2>42 Coffee Cups Test Assignment</h2>
-  <div class="col">
-    <p><div class="row">Name </div>Artem</p>
-    <p><div class="row">Last name </div>Khymenko</p>
-    <p><div class="row">Date of birth </div>7.11.1989</p>
-    <p><div class="row-2">Bio:</div>I'm a self-taught Python developer with focused on Django web development.</p>
-  </div>
-  <div class="col">
-    <p><div class="row">Contacts</div></p>
-    <p><div class="row">Email: artem.khymenko@gmail.com</div></p>
-    <p><div class="row">Jabber: artemkhymenko</div></p>
-    <p><div class="row">Skype: breakerhim</div></p>
-    <p><div class="row-2">Other contacts</div>49106 Dnipro</p>
-  </div>
+{% for cont in data %}
+    <h2>42 Coffee Cups Test Assignment</h2>
+    <div class="col">
+      <p><div class="row">Name </div>{{cont.name}}</p>
+      <p><div class="row">Last name </div>{{cont.last_name}}</p>
+      <p><div class="row">Date of birth </div>{{cont.date_of_birth}}</p>
+      <p><div class="row-2">Bio:</div>{{cont.bio}}</p>
+    </div>
+    <div class="col">
+      <p><div class="row">Contacts</div></p>
+      <p><div class="row">Email: {{cont.email}}</div></p>
+      <p><div class="row">Jabber: {{cont.jabber}}</div></p>
+      <p><div class="row">Skype: {{cont.skype}}</div></p>
+      <p><div class="row-2">Other contacts</div>{{cont.other_contacts}}</p>
+    </div>
+{% endfor %}
 {% endblock %}

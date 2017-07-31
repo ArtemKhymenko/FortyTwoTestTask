@@ -9,7 +9,7 @@ class HelloModelsTest(TestCase):
         self.person = Person.objects.create(
             name='Artem',
             last_name='Khymenko',
-            date_of_birth='07.11.1989',
+            date_of_birth='1989-11-07',
             bio='Long way',
             email='artem.khymenko@gmail.com',
             jabber='artemkhymenko',
@@ -18,5 +18,5 @@ class HelloModelsTest(TestCase):
         )
 
     def test_model(self):
-        self.asserEqual(self.person.name, 'Artem')
-        self.asserEqual(self.person.bio, 'Long way')
+        self.assertEqual(self.person.name, 'Artem')
+        self.assertEqual(self.person.bio, 'Long way')
