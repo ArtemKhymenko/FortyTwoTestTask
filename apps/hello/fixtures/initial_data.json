@@ -1,0 +1,34 @@
+[
+{
+    "pk": 1, 
+    "model": "hello.person", 
+    "fields": {
+        "bio": "I'm a self-taught Python developer with focused on Django web development.", 
+        "last_name": "Khymenko", 
+        "name": "Artem", 
+        "other_contacts": "49106 Dnipro", 
+        "date_of_birth": "1989-11-07", 
+        "skype": "breakerhim", 
+        "jabber": "artemkhymenko", 
+        "email": "artem.khymenko@gmail.com"
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "admin", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2017-07-28T14:08:20.099Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$z6vQ4KxM0EQJ$TYneAQQHTXkwW70xQVXGZlC4XyDpszqYfkjd6jIXY+4=", 
+        "email": "breakerhim@ua.fm", 
+        "date_joined": "2017-07-28T14:08:02.982Z"
+    }
+}
+]
